@@ -308,3 +308,104 @@ header {
   }
 }
 /* END OF GIFT */
+
+/* PRODUCTS */
+.product {
+  height: 500px;
+  background-color: bisque;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 36px;
+  position: relative;
+  margin-bottom: 12px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product:first-child {
+  margin-bottom: 34px;
+  margin-top: 12px;
+}
+
+.product__image {
+  margin-bottom: 8px;
+}
+
+.product__title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.product__subtitle {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.product__decoration {
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  bottom: 36px;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to right,
+    #0090f7,
+    #ba62fc,
+    #f2416b,
+    #f55600
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product--ipad {
+  background-image: url(images/ipadair.png);
+}
+
+.product--airpods {
+  background-image: url(images/airpods-mobile.png);
+  color: white;
+  padding-bottom: 54px;
+}
+
+.product--end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product--airpods .product__subtitle {
+  width: 241px;
+}
+
+.product--watch {
+  background-image: url(images/watch-mobile.png);
+}
+
+.product--air {
+  background-image: url(images/macbook.png);
+}
+
+.product--business {
+  background-image: url(images/small-business.png);
+}
+
+.product--carrier {
+  padding-bottom: 47px;
+  background-image: url(images/carrier-deals.png);
+}
+
+.product--trade {
+  background-image: url(images/tradein.png);
+}
+
+@media (min-width: 800px) {
+  .product--ipad {
+    width: 100%;
+  }
+}
