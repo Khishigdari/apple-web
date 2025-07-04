@@ -1,9 +1,10 @@
 body {
   margin: 0 auto;
   font-family: inter;
-  max-width: 1920px;
+  max-width: 2500px;
 }
 
+/* HOME PAGE CSS */
 /* HEADER */
 header {
   display: flex;
@@ -434,6 +435,18 @@ header {
     margin-bottom: 0;
     /* margin-top: 12px; */
   }
+  .product:nth-child(4) {
+    margin-top: -12px;
+  }
+  .product:nth-child(5) {
+    margin-top: -12px;
+  }
+  .product:nth-child(6) {
+    margin-top: -12px;
+  }
+  .product:nth-child(7) {
+    margin-top: -12px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -444,6 +457,12 @@ header {
   .product:nth-child(2) {
     margin-top: 12px;
     background-image: url(images/airpods.png);
+  }
+  .product:nth-child(3) {
+    margin-top: -12px;
+  }
+  .product:nth-child(8) {
+    margin-top: -12px;
   }
   .product--watch {
     background-image: url(images/watch.png);
@@ -700,3 +719,4 @@ header {
     margin-bottom: 21.64px;
   }
 }
+/* END OF HOME PAGE CSS */

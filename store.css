@@ -23,6 +23,8 @@ header {
 
 .menu {
   display: none;
+  z-index: 1;
+  height: 100%;
 }
 
 .logo {
@@ -45,6 +47,50 @@ header {
   align-items: center;
   background-color: transparent;
   border: 0;
+}
+.menu > a {
+  display: flex;
+  align-items: center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 590px;
+  right: 0;
+  background-color: white;
+  padding: 30px 0;
+  /* padding: 30px 590px; */
+  /* min-width: 1024px; */
+}
+.dropdown {
+  width: 1024px;
+}
+.dropdown-content > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #6e6e73;
+  font-weight: 700;
+  margin-right: 70px;
+}
+.dropdown-bg {
+  position: fixed;
+  inset: 0;
+  top: 48px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: blur(4px);
+  display: none;
+  transition: all 0.5s;
+}
+.menu:hover .dropdown-bg {
+  display: block;
+}
+
+.menu:hover .dropdown-content {
+  display: block;
+  z-index: 1;
 }
 
 @media (min-width: 1000px) {
@@ -192,8 +238,10 @@ header {
 /* scroll-1 */
 section {
   width: 100%;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  padding-top: 7px;
 }
 
 .scroll-title {
@@ -292,6 +340,11 @@ section::-webkit-scrollbar {
   height: 500px;
   width: 400px;
   position: relative;
+  transition: all 0.5s;
+}
+
+.scroll-box-2:hover {
+  transform: scale(1.02);
 }
 
 .scroll-box-2-text-2 {
@@ -314,6 +367,11 @@ section::-webkit-scrollbar {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
   flex-shrink: 0;
+  transition: all 0.5s;
+}
+
+.scroll-box-product:hover {
+  transform: scale(1.02);
 }
 
 .scroll-product-image {
@@ -375,6 +433,11 @@ section::-webkit-scrollbar {
   height: 500px;
   width: 400px;
   position: relative;
+  transition: all 0.5s;
+}
+
+.scroll-box-3:hover {
+  transform: scale(1.02);
 }
 
 .scroll-box-3-text-2 {
@@ -403,7 +466,9 @@ section::-webkit-scrollbar {
   gap: 20px;
   padding-left: 140px;
   box-sizing: border-box;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top: 7px;
   scroll-snap-type: x mandatory;
   margin-bottom: 40px;
 }
@@ -451,12 +516,14 @@ section::-webkit-scrollbar {
   border-radius: 18px;
   height: 500px;
   width: 480px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .scroll-box-image-3 {
   border-radius: 18px;
   height: 500px;
   width: 480px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .scroll-box-small {
@@ -471,6 +538,11 @@ section::-webkit-scrollbar {
   padding-top: 82px;
   padding-right: 35px;
   box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.scroll-box-small:hover {
+  transform: scale(1.02);
 }
 
 .scroll-box-content {
@@ -520,11 +592,14 @@ section::-webkit-scrollbar {
   display: flex;
   gap: 20px;
   padding-left: 140px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   box-sizing: border-box;
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   margin-bottom: 40px;
-  height: 515px;
+  /* height: 500px; */
 }
 
 .scroll-5::-webkit-scrollbar {
@@ -533,6 +608,7 @@ section::-webkit-scrollbar {
 
 .scroll-5-box {
   width: 480px;
+  /* height: 500px; */
   position: relative;
   transition: all 0.5s;
 }
@@ -583,7 +659,10 @@ section::-webkit-scrollbar {
   gap: 20px;
   padding-left: 140px;
   box-sizing: border-box;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top: 7px;
+  padding-bottom: 7px;
   scroll-snap-type: x mandatory;
   margin-bottom: 60px;
   height: 515px;
