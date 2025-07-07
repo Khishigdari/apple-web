@@ -52,46 +52,7 @@ header {
   display: flex;
   align-items: center;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 48px;
-  left: 590px;
-  right: 0;
-  background-color: white;
-  padding: 30px 0;
-  /* padding: 30px 590px; */
-  /* min-width: 1024px; */
-}
-/* .dropdown {
-  width: 1024px;
-} */
-.dropdown-content > a {
-  text-decoration: none;
-  font-size: 12px;
-  color: #6e6e73;
-  font-weight: 700;
-  margin-right: 70px;
-}
-.dropdown-bg {
-  position: fixed;
-  inset: 0;
-  top: 48px;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  filter: blur(4px);
-  display: none;
-  transition: all 0.5s;
-}
-.menu:hover .dropdown-bg {
-  display: block;
-}
 
-.menu:hover .dropdown-content {
-  display: block;
-  z-index: 1;
-}
 
 @media (min-width: 1000px) {
   .menu {
